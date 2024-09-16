@@ -1,0 +1,374 @@
+/* Easy import the same version of bootstrap for all pages */
+/*@import url("https://ledrama-dev.vector.fi/uibuilder/vendor/bootstrap/dist/css/bootstrap.css"); */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
+
+
+/* Load defaults from `<userDir>/node_modules/node-red-contrib-uibuilder/front-end/uib-brand.min.css`
+ * This version auto-adjusts for light/dark browser settings but might not be as complete.
+ */
+/*@import url("../uibuilder/uib-brand.min.css"); 
+@import url("https://ledrama-dev.vector.fi/uibuilder/uib-brand.min.css");
+*/
+
+
+/* Custom styles */
+
+html, body {
+    height: 100% !important;
+    background: rgb(189, 0, 255);
+    background: linear-gradient(135deg, rgba(189, 0, 255, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 75%, rgba(189, 0, 255, 1) 100%);
+    background-attachment: fixed;
+    color: white !important;
+    font-family: 'Work Sans', sans-serif;
+ }
+
+ body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+* {
+  --orange: #D94D15;
+}
+
+/* Generic button styles */
+.btn {
+    background-color: #f1f1f1;
+    border: none;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;  
+  }
+
+.btn-primary {
+  background-color: #f1f1f1 !important;
+  color: black !important;
+  border: none !important;
+}
+
+.btn-primary:hover, .btn-primary:active {
+  background-color: var(--orange) !important;
+}
+
+.btn-danger {
+  background-color: #dc3545 !important;
+  color: white !important;
+}
+
+.btn-group-controllerlist {
+  width: 100% !important;
+  margin-bottom: 10px;
+}
+
+.btn-controller-list {
+  max-width: 25%;
+  height: 100%;
+}
+
+.btn-filter {
+  margin-left: 25% !important;
+}
+
+.btn-configuration-apply {
+  width: 30%;
+  height: 100%;
+  margin-top: 15px;
+  float: right;
+}
+
+.btngroup-effect-list {
+  height: 20%;
+}
+
+.btn-effect-list {
+  margin-top: 10px !important;
+  margin-left: 20%;
+  width: 55% !important;
+  height: 45px;
+}
+
+.btn-effect-settings {
+  width: 50%;
+  height: 100%;
+}
+
+.btn-group-led-preview {
+  width: 100%;
+  margin-left: -5px;
+}
+
+/* For inner windows with a scroll bar */
+.scrollable {
+  height: 70%;
+  overflow-y: scroll;
+  background-color: #dfdfdf;
+  scrollbar-color: #686868 #3b3b3b;
+}
+
+/* Custom table styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Table title row */
+th {
+  background-color: #394246;
+  color: #abb5ba;
+  padding-left: 1vw;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+}
+
+th:hover {
+  background-color: #282F31;
+  transition: 0.3s;
+}
+
+/* Normal table  row */
+tr {
+    cursor: pointer;
+    height: 4.5vh;
+    background-color: white !important;
+    color: black !important;
+}
+
+tr:hover {
+    background-color: #f0f0f0 !important;
+    transition: 0.3s;
+}
+
+/* Selected row styles */
+tr.selected {
+    background-color: #d94d15 !important;
+    color: white !important;
+}
+
+tr.selected:hover {
+    background-color: #c34512 !important;
+    transition: 0.3s;
+}
+
+/* Individual table cells */
+td {
+  padding-left: 1vw;
+}
+
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  color: black !important;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 450px !important;
+}
+
+.modal .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#jsonpreview {
+  color: white;
+  background-color: #3b3b3b;
+}
+
+.apply-row {
+  height: 2rem;
+}
+
+/* Entinen index.css sisältö  */
+ 
+ /* Solid border */
+ hr.solid {
+   border-top: thin solid #D94D15;
+   margin: 0;
+   border: 0;
+ }
+ 
+ .with-subtitle {
+   margin-top: 0;
+ }
+ 
+ .tab {
+   overflow: hidden;
+   top: 0; /* Position the navbar at the top of the page */
+   width: 100%; /* Full width */
+   background-color: black;
+   border-bottom-style: solid;
+   border-bottom-color:#d94d15;
+   position: sticky;
+   z-index: 999;
+ }
+ 
+ /* Style the buttons that are used to open the tab content */
+ .tab button {
+   float: left;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   background-color: black;
+   color: white;
+   text-align: center;
+   font-family: 'Work Sans', sans-serif;
+   font-size: 20px;
+   padding: 14px 48px;
+   box-shadow: none;
+   border-radius: 0%;
+ }
+ 
+ /* Change background color of buttons on hover */
+ .tab button:hover {
+   background-color: #bd00ff;
+ }
+ 
+ /* Create an active/current tablink class */
+ .tab button.active {
+   background-color: #00abe7;
+ }
+
+ .router-link-active {
+  background-color: #00abe7 !important;
+ }
+
+ .tabtext {
+    color:white;
+    float: right;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    padding: 14px 54px;
+}
+
+/* Saved effects list styling */
+.list-group {
+  padding: 0px !important;
+  border-radius: 0% !important;
+  max-height: 450px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-color: #686868 #3b3b3b;
+}
+
+.list-group-item:hover {
+  cursor: pointer !important;
+  background-color: lightgray !important;
+}
+
+#gradient-style-select:disabled {
+  background-color: #686868 !important;
+}
+
+.form-control {
+  border-radius: 0% !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--orange) !important;
+  border-color: #0A0A0A !important;
+}
+
+.form-check-input:focus {
+  box-shadow: none !important;
+}
+
+.form-number {
+  background-color: #3b3b3b;
+  border: 1px solid #73848c !important;
+  border-radius: 5px;
+  color: white;
+  padding-left: 5px;
+  width: 100%;
+}
+
+.form-number:disabled {
+  background-color: transparent;
+  color: #73848c;
+}
+
+.input-group {
+  padding-bottom: 10px !important;
+}
+
+/* form border none */
+.was-validated {
+  border: none !important;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: black !important;
+  color: white;
+  outline: none;
+  box-shadow: none;
+  font-size: large;
+  cursor: pointer;
+  text-align: left;
+  border-bottom: 3px solid #d94d15;
+  border-right: 3px solid #d94d15;
+  width: 200px;
+  margin-top: 20px;
+  display: inline-block;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  background-color: black;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\002c5'; /* Unicode character for down arrowhead */
+  font-size: 18px;
+  color: grey;
+  float: right;
+  margin-right: 10px;
+}
+
+.accordion.active:after {
+  content: "\0002c4"; /* Unicode character for up arrowhead */
+}
+
+#set-to-group {
+  margin-top: 20px !important;
+}
+
+.led-preview {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.toast-body {
+  color: black;
+}
+
+textarea {
+  min-width: 286px;
+}

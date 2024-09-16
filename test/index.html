@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Router test - Node-RED uibuilder</title>
+    <meta name="description" content="Node-RED uibuilder - Router test">
+    <link type="text/css" rel="stylesheet" href="./index.css" media="all">
+</head>
+
+<body>
+    <div id="my-app" style="text-align:center">
+        <nav>
+            <router-link to='/'><button style="margin-right:3em">Configuration</button></router-link>
+            <router-link to='/contacts'><button>Effects</button></router-link>
+        </nav>
+        <router-view v-slot="{ Component }">
+            <keep-alive>
+                <component :is="Component" />
+            </keep-alive>
+        </router-view>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue3-sfc-loader/dist/vue3-sfc-loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-router@4.0.3/dist/vue-router.global.js"></script>
+    <!-- #region Supporting Scripts. These MUST be in the right order. Note no leading / -->
+    <script src="../../uibuilder/uibuilder.iife.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

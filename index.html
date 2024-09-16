@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ledrama GUI - faster, better, stronger!</title>
+    <meta name="description" content="Node-RED uibuilder - Router test">
+    <link type="text/css" rel="stylesheet" href="css/common.css" media="all">
+    <link rel="stylesheet" href="css/colorpicker.css">
+</head>
+
+<body>
+
+    <div id="my-app">
+        <div class="tab">
+            <router-link to='/' v-slot="{ href, route, navigate, isActive, isExactActive }">
+                <button id="configuration" class="tablinks" :class="[isActive && 'router-link-active', isExactActive && 'router-link-exact-active']">
+                    <div class="tab-text">Configuration</div>
+                </button>
+            </router-link>
+            <router-link to='/effects' v-slot="{ href, route, navigate, isActive, isExactActive }">
+                <button id="effects" class="tablinks" :class="[isActive && 'router-link-active', isExactActive && 'router-link-exact-active']">
+                    <div class="tab-text">Effect control</div>
+                </button>
+            </router-link>
+            <div class="tabtext">
+                Ledrama GUI - Faster, better, stronger!
+            </div>
+        </div>
+        <router-view v-slot="{ Component }">
+            <keep-alive>
+                <component :is="Component" />
+            </keep-alive>
+        </router-view>
+    </div>
+
+    <!--<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>-->
+    <script src="../uibuilder/vendor/vue/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue3-sfc-loader/dist/vue3-sfc-loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-router@4.0.3/dist/vue-router.global.js"></script>
+    <!-- #region Supporting Scripts. These MUST be in the right order. Note no leading / -->
+    <script src="../uibuilder/uibuilder.iife.min.js"></script>
+    <script src="js/index.js"></script>
+    
+</body>
+
+</html>

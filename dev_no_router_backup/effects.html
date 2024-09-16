@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="./common.css" media="all">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>Lighting effect controls</h1>
+        <div id="app">
+            <div class="row row-cols-4">
+                <!-- Vue dependant code starts here -->
+                <div class="col">
+
+                    <div class="row mt-3">
+                        <h4>Saved effects</h4>
+                        <Effectlist @effect-updated="getEffect"></Effectlist>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="row mt-3">
+                        <h4>Color picker
+                            <i class="fa fa-info-circle" aria-hidden="true" @click="openModal" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Click for help"></i>
+                        </h4>
+                        <!-- Color Picker Helper -->
+                        <div id="pickerModal" class="modal" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Color Picker Help</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>The final gradient is located under the big color selector screen. The points
+                                            of the gradient
+                                            are displayed as small white circles.</p>
+                                        <ul>
+                                            <li>Edit a specific color point by clicking on its circle and selecting a
+                                                new color from the
+                                                bottom color bar</li>
+                                            <li>Colors can be adjusted on the color bar, or set as hex values or RGB
+                                                values</li>
+                                            <li>Move color points by dragging them on the gradient bar</li>
+                                            <li>Add more color points by clicking on empty spaces between the white
+                                                circles</li>
+                                            <li>Remove color points by double-clicking on the color point circle</li>
+                                        </ul>
+                                        <p>The minimum number of colors in a gradient is 2, and the maximum is 16. Alfa
+                                            values other
+                                            than 100 are ignored.</p>
+                                        <p><strong>NOTE:</strong> Colors that are very dark may not display on
+                                            LED-lights correctly,
+                                            brighter colors are recommended.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" onclick="closeModal()">Close</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="picker">
+                            <!-- <script type="module" src="./colorpicker.js.mjs"></script> -->
+                            <colorpicker :newgradient="db_gradient" @change="getHSV"></colorpicker>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <h4>JSON preview:</h4>
+                        <textarea name="json-output" id="jsonpreview" cols="20" rows="10" readonly>{{ generateJSONpreview }}</textarea>
+                    </div>
+                </div>
+
+                <!-- Effect settings -->
+
+                <form class="row mt-3 was-validated" onsubmit="return false">
+                    <div class="row">
+                        <h4>Effect settings</h4>
+                        <div class="input-group set-into-group">
+                            <label class="input-group-text">Effect style: </label>
+                            <select v-model="sEffect" class="form-select" required aria-label="effect style select" id="effect-style-select">
+                <!--<option value="">Set effect style</option> -->
+                <option value="0">BPM (cycle through rainbow colors, flash inbetween)</option>
+                <option value="1">BPM2 (change all lights from selected color to another)</option>
+                <option value="2">BPM3 (change all lights from color to another, optional flash inbetween)</option>
+                <option value="3">Gradient (move colors along the led lights)</option>
+                <option v-if="(sEffect > 3)">{{ sEffect }}</option>
+              </select>
+                            <div class="invalid-feedback">Effect style required</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group set-into-group">
+                            <label class="input-group-text">Gradient mode: </label>
+                            <select v-model="gMapMode" class="form-select" required aria-label="gradient style select" id="gradient-style-select" v-bind:disabled="(sEffect < 3)">
+                <option value="">Set gradient mode</option>
+                <option value="1">Top to bottom</option>
+                <option value="2">Bottom to top</option>
+                <option value="3">Outwards from center</option>
+                <option value="4">Inwards to center</option>
+                <option v-if="(gMapMode > 4)">{{gMapMode}}</option>
+              </select>
+                            <div class="invalid-feedback">Effect style required</div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div>
+                            <table class="table table-borderless table-dark" style="border: none">
+                                <div class="range-wrap">
+                                    <tr>
+                                        <td>Effect speed</td>
+                                        <td><input type="range" style="border: 0" min="0" max="160" v-model="fxSpeed" class="form-range" id="fxSpeed-slider" v-bind:disabled="(sEffect < 2 && sEffect != 0)">
+                                        </td>
+                                        <td><input type="number" min="0" max="255" v-model="fxSpeed" class="form-number" id="fxSpeed-number" v-bind:disabled="(sEffect < 2 && sEffect != 0)">
+                                        </td>
+                                    </tr>
+                                </div>
+                                <div class="range-wrap">
+                                    <tr>
+                                        <td>BPM</td>
+                                        <td><input type="range" style="border: 0" min="0" max="160" v-model="bpm" class="form-range" id="bpm-slider" v-bind:disabled="(sEffect < 0 || sEffect == 3)">
+                                        </td>
+                                        <td><input type="number" min="0" max="255" v-model="bpm" class="form-number" id="bpm-number" v-bind:disabled="(sEffect < 0 || sEffect == 3)">
+                                        </td>
+                                    </tr>
+                                </div>
+                                <div class="range-wrap">
+                                    <tr>
+                                        <td>Gradient scale</td>
+                                        <td><input type="range" style="border: 0" min="0" max="300" v-model="gScale" class="form-range" id="gScale-slider" v-bind:disabled="(sEffect < 3)">
+                                        </td>
+                                        <td><input type="number" min="0" max="999" v-model="gScale" class="form-number" id="gScale-number" v-bind:disabled="(sEffect < 3)">
+                                        </td>
+                                    </tr>
+                                </div>
+                            </table>
+                        </div>
+
+                        <div data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Only available if noise 
+                        is applicable to the selected effect">
+                            <input
+                          type="checkbox"
+                          id="noisetogglecheckbox"
+                          class="btn-check"
+                          v-bind:disabled="(sEffect == 0)"
+                          v-model="noise"
+                          id="noise"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          data-bs-title="Select to see more options">
+                            <label class="accordion" for="noisetogglecheckbox">Add noise to effect</label>
+                        </div>
+
+                        <div id="noisesettings" v-if="noise">
+
+                            <table class="table table-borderless table-dark" style="border: none">
+                                <div class="range-wrap">
+                                    <tr>
+                                        <td>Noise amount</td>
+                                        <td><input type="range" style="border: 0" min="0" max="255" v-model="nVal" class="form-range" id="nAmount-slider">
+                                        </td>
+                                        <td><input type="number" min="0" max="255" v-model="nVal" class="form-number" id="nAmount-number">
+                                        </td>
+                                    </tr>
+                                </div>
+                                <div class="range-wrap">
+                                    <tr>
+                                        <td>Noise hue</td>
+                                        <td><input type="range" style="border: 0" min="0" max="255" v-model="nHue" class="form-range" id="nHue-slider">
+                                        </td>
+                                        <td><input type="number" min="0" max="255" v-model="nHue" class="form-number" id="nHue-number">
+                                        </td>
+                                    </tr>
+                                </div>
+                                <div class="range-wrap">
+                                    <tr>
+                                        <td>Noise saturation</td>
+                                        <td><input type="range" style="border: 0" min="0" max="255" id="nsat-setting" v-model="nSat" class="form-range" id="nSaturation-slider">
+                                        </td>
+                                        <td><input type="number" min="0" max="255" v-model="nSat" class="form-number" id="nSaturation-number">
+                                        </td>
+                                    </tr>
+                                </div>
+                                <div class="range-wrap">
+                                    <tr>
+                                        <td>Noise contrast</td>
+                                        <td><input type="range" style="border: 0" min="0" max="10" v-model="nContrast" class="form-range" id="nContrast-slider">
+                                        </td>
+                                        <td><input type="number" min="0" max="10" v-model="nContrast" class="form-number" id="nContrast-number">
+                                        </td>
+                                    </tr>
+                                </div>
+                                <div class="range-wrap">
+                                    <tr>
+                                        <td>Noise size</td>
+                                        <td><input type="range" style="border: 0" min="0" max="1000" v-model="nScaleX" class="form-range" id="nSize-slider">
+                                        </td>
+                                        <td><input type="number" min="0" max="1000" v-model="nScaleX" class="form-number" id="nSize-number">
+                                        </td>
+                                    </tr>
+                                </div>
+                                <div class="range-wrap">
+                                    <tr>
+                                        <td>Noise speed</td>
+                                        <td><input type="range" style="border: 0" min="0" max="255" v-model="nScaleY" class="form-range" id="nSpeed-slider">
+                                        </td>
+                                        <td><input type="number" min="0" max="255" v-model="nScaleY" class="form-number" id="nSpeed-number">
+                                        </td>
+                                    </tr>
+                                </div>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <Groupsettings id="set-to-group" @group-number-updated="getGroup"></Groupsettings>
+                    </div>
+                    <div class="row">
+                        <div class="btn-group me-2" role="group">
+                            <button class="btn btn-danger" @click="clearEffect">Clear all</button>
+                            <button class="btn btn-primary" type="submit" @click="applyEffect">Apply effect</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="col">
+                    <div class="row mt-3">
+                        <h4 style="color:white;">Effect preview</h4>
+                        <div class="d-flex justify-content-center">
+                            <canvas id="ledCanvas" style="width:25px;height:500px; border:1px solid gray" width="25"
+                                height="500"></canvas>
+                        </div>
+                        <!--<div id="controls"></div>-->
+                        <div id="effectControls"></div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End of Vue app -->
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue3-sfc-loader"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="./effects.js" type="module"></script>
+    <script type="module" src="ledpreview.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./common.js" type="module"></script>
+    <script>
+        function closeModal() {
+        document.getElementById('pickerModal').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

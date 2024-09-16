@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ledrama GUI - faster, better, stronger!</title>
+    <meta name="description" content="Ledrama GUI - faster, better, stronger!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/node-blue.ico">
+
+    <!-- Your own CSS -->
+    <link type="text/css" rel="stylesheet" href="./index.css" media="all">
+    <link type="text/css" rel="stylesheet" href="./common.css" media="all">
+
+
+    <!-- NOTE that this is loaded as a MODULE & other libraries loaded by it -->
+    <!-- <script type="module" src="./index.js">
+        /* Imports uibuilder + your custom code */
+    </script> -->
+    <script src="./common.js" type="module"></script>
+
+</head>
+
+<body class="uib">
+
+    <div class="tab">
+        <button id="effects" class="tablinks" onclick="switchTab(this)">
+                <div class="tab-text">Effect control</div>
+            </button>
+        <button id="configuration" class="tablinks" onclick="switchTab(this)">
+                <div class="tab-text">Configuration</div>
+            </button>
+        <div class="tabtext">
+            Ledrama GUI - Faster, better, stronger!
+        </div>
+    </div>
+    <hr class="solid">
+    <div class="ratio ratio-16x9">
+        <iframe id="content-iframe" src="effects.html" onload="resizeIframe()"></iframe>
+    </div>
+    <!-- <div id="pageContent"></div> -->
+
+    <script>
+        function resizeIframe() {
+            var iframe = document.getElementById("content-iframe");
+        }
+    </script>
+
+    <script>
+        function switchTab(element) {
+            // Get all elements with class="tablinks" and remove the class "active"
+            var tablinks = document.getElementsByClassName("tablinks");
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            var tabId = element.id;
+            document.getElementById(tabId).className += " active";
+            openPage(tabId + '.html');
+        }
+        // Wait for openPage to exist, fixes SCRUM-37 (hopefully)
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("effects").click();
+        }); 
+
+        /*function loadPage(pageName) {
+      fetch(`${pageName}.html`)
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('pageContent').innerHTML = html;
+        })
+        .catch(error => {
+          console.error('Error fetching page:', error);
+        }); 
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Load initial page content
+      loadPage('configuration');
+    }); */
+    window.openPage = function openPage(pageUrl) {
+    const iframe = document.getElementById('content-iframe');
+    iframe.src = pageUrl;
+    }
+    </script>
+
+    <script nomodule>
+        document.getElementById('app').innerHTML = "Your browser doesn't support JavaScript modules :(";
+    </script>
+
+</body>
+
+</html>
