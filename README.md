@@ -1,7 +1,7 @@
-Ledrama GUI (Kandiprojekti)
-Käyttöohje
+<h1>Ledrama GUI (Kandiprojekti)</h1>
+<h2>Käyttöohje</h2>
  
-Johdanto
+<b>Johdanto</b>
 
 Ledrama GUI on LED-valoputkien konfigurointiin ja valoefektien säätämiseen tarkoitettu helppokäyttöinen käyttölittymä. Valoputkien ohjainten (ESP32) konfigurointi tapauhtuu JSON-muotoisilla MQTT-viesteillä. Ledrama GUI:n avulla MQTT-viestit voidaan muodostaa ja lähettää ohjaimille muutamalla klikkauksella.
 Sovelluksen avulla eri alueille asennetut valoputket saadaan säädettyä perusasetuksille nopeasti ja vaivattomasti. Ohjaimet voidaan liittää haluttuihin ryhmiin ja efektejä voidaan muokata putkien lukumäärän ja pituuden perusteella. Parhaat efektit voidaan tallentaa myöhempää käyttöä varten.
