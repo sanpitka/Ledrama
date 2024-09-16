@@ -1,0 +1,1583 @@
+[
+    {
+        "id": "fc2f8c974347bb18",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1fb45dacd1719638",
+        "type": "group",
+        "z": "fc2f8c974347bb18",
+        "style": {
+            "stroke": "#b2b3bd",
+            "stroke-opacity": "1",
+            "fill": "#f2f3fb",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#32333b"
+        },
+        "nodes": [
+            "24e6dca351947bd7",
+            "cd3e4333e16f8b10",
+            "685c52fecff3bb75",
+            "ea572f6c9fb697b4",
+            "fde2289209736ddc",
+            "4c003b39e8fea80f"
+        ],
+        "x": 34,
+        "y": 19,
+        "w": 552,
+        "h": 162
+    },
+    {
+        "id": "c430558767986893",
+        "type": "group",
+        "z": "fc2f8c974347bb18",
+        "style": {
+            "stroke": "#b2b3bd",
+            "stroke-opacity": "1",
+            "fill": "#f2f3fb",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#32333b"
+        },
+        "nodes": [
+            "b7829d32adac79cd",
+            "e118c6c306573819",
+            "9aa7011a8ca2c5d3",
+            "5a670d53ccee1629",
+            "ec49de4ba6d16127",
+            "0f8b73aa9c3eaabc",
+            "4231e164d9d01036",
+            "a57ce25cd17e3226",
+            "54f6bb94c50b72ed",
+            "6ee6eb5749798797",
+            "1857e266360438f4",
+            "287c54e7dba68328",
+            "2ecf735c8e648b91",
+            "8ee2c2efb0c70fa5",
+            "7072979911e48f1a",
+            "35154949f0ae9fd7",
+            "e7401383ecb07322"
+        ],
+        "x": 614,
+        "y": 19,
+        "w": 1602,
+        "h": 302
+    },
+    {
+        "id": "d7d27a53b7f73cd2",
+        "type": "group",
+        "z": "fc2f8c974347bb18",
+        "style": {
+            "stroke": "#b2b3bd",
+            "stroke-opacity": "1",
+            "fill": "#f2f3fb",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#32333b"
+        },
+        "nodes": [
+            "0e74e124a16be34f",
+            "47be5edc5bae2310",
+            "391917d0898de884",
+            "69aef4937ecb637e",
+            "992af21e2ca714c2"
+        ],
+        "x": 14,
+        "y": 959,
+        "w": 672,
+        "h": 142
+    },
+    {
+        "id": "aeb9bf0d07038c9b",
+        "type": "group",
+        "z": "fc2f8c974347bb18",
+        "style": {
+            "stroke": "#b2b3bd",
+            "stroke-opacity": "1",
+            "fill": "#f2f3fb",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#32333b"
+        },
+        "nodes": [
+            "111eaf18cee2588f",
+            "1c6d666c53083b5e",
+            "7cb800562d9fd7b4",
+            "04289283f6f2ed94",
+            "ec89871e554db0e9",
+            "099f4eecdf01f1d1",
+            "6a549b49ea38fa02",
+            "f63b999e3b9ebc5f"
+        ],
+        "x": 14,
+        "y": 339,
+        "w": 852,
+        "h": 182
+    },
+    {
+        "id": "24c8fada6efc99d6",
+        "type": "group",
+        "z": "fc2f8c974347bb18",
+        "style": {
+            "stroke": "#b2b3bd",
+            "stroke-opacity": "1",
+            "fill": "#f2f3fb",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#32333b"
+        },
+        "nodes": [
+            "cf144f0cd6891cce",
+            "5df40f6a8c07a1c6",
+            "0ec9dda61574a6df",
+            "6b56fbd5d54ad65e",
+            "04a27cea8fefe641",
+            "9fb032c06d869634",
+            "79363f727cd6b517"
+        ],
+        "x": 14,
+        "y": 539,
+        "w": 832,
+        "h": 142
+    },
+    {
+        "id": "3254992e7607666b",
+        "type": "group",
+        "z": "fc2f8c974347bb18",
+        "style": {
+            "stroke": "#b2b3bd",
+            "stroke-opacity": "1",
+            "fill": "#f2f3fb",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#32333b"
+        },
+        "nodes": [
+            "a69ad1dab6c2c535",
+            "03fc773d76b7ae35",
+            "0895603b987fbba4",
+            "6cd212cb8ee5c0fe",
+            "abd918cabd6be4c6",
+            "5055038c9ffe9167"
+        ],
+        "x": 14,
+        "y": 699,
+        "w": 792,
+        "h": 142
+    },
+    {
+        "id": "9a15bda3321376b0",
+        "type": "uibuilder",
+        "z": "fc2f8c974347bb18",
+        "name": "",
+        "topic": "",
+        "url": "ui",
+        "okToGo": true,
+        "fwdInMessages": false,
+        "allowScripts": false,
+        "allowStyles": false,
+        "copyIndex": true,
+        "templateFolder": "esm-vue3-nobuild",
+        "extTemplate": "",
+        "showfolder": false,
+        "reload": false,
+        "sourceFolder": "src",
+        "deployedVersion": "6.8.2",
+        "showMsgUib": false,
+        "title": "",
+        "descr": "",
+        "x": 1170,
+        "y": 540,
+        "wires": [
+            [
+                "d573f281baeb4dfc"
+            ],
+            [
+                "344d45ae3f3b3fa6"
+            ]
+        ]
+    },
+    {
+        "id": "26d1cc3769da6b5f",
+        "type": "link in",
+        "z": "fc2f8c974347bb18",
+        "name": "UI in",
+        "links": [
+            "e7401383ecb07322",
+            "7721d6d94462f47c"
+        ],
+        "x": 990,
+        "y": 540,
+        "wires": [
+            [
+                "9a15bda3321376b0"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "560c81aed2918d77",
+        "type": "http in",
+        "z": "fc2f8c974347bb18",
+        "name": "",
+        "url": "api/effects",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1000,
+        "y": 780,
+        "wires": [
+            [
+                "00570f7833b30b2f",
+                "74cf0b91172cb4a4"
+            ]
+        ]
+    },
+    {
+        "id": "57ec9e0172c75cb1",
+        "type": "http in",
+        "z": "fc2f8c974347bb18",
+        "name": "",
+        "url": "api/config",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1000,
+        "y": 720,
+        "wires": [
+            [
+                "74cf0b91172cb4a4",
+                "fbb19fb7148bb7e0"
+            ]
+        ]
+    },
+    {
+        "id": "f57c57aac1a42233",
+        "type": "http in",
+        "z": "fc2f8c974347bb18",
+        "name": "",
+        "url": "api/database",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1070,
+        "y": 940,
+        "wires": [
+            [
+                "2f83d04b4f8efe71",
+                "9bc8c9d0b2263240"
+            ]
+        ]
+    },
+    {
+        "id": "fbb19fb7148bb7e0",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "name": "function 2",
+        "func": "msg.statusCode = 200;\n\nif (Array.isArray(msg.payload)) {\n    // config messages\n    let currentMac = null;\n\n    msg.payload.forEach(function (config, index) {\n        // Asynchronously send separate messages for each configuration item\n        let message = {};\n        message.topic = config.topic;\n        message.payload = config.payload;\n        node.send([message, null]);\n\n        // Send separate message to save config after all messages for current mac have been sent\n        let mac = getMac(config.topic);\n\n        if (currentMac === null && mac !== null) {\n            currentMac = mac; // the first mac to be processed\n        }\n        if (mac && mac !== currentMac) {\n            // Mac has changed, send save message for the previous mac\n            let save_message = {};\n            // Config save message only needs the topic, no payload    \n            save_message.topic = \"ledrama/config/save/\" + currentMac;\n            save_message.payload = {};\n            save_message.qos = 1; // set the message to be sent at least once\n            node.send([save_message, null]);\n            currentMac = mac; // update the current mac\n        }\n        if (mac && index === msg.payload.length - 1) {\n            // List is over, send save message for the last mac\n            let save_message = {};\n            // Config save message only needs the topic, no payload    \n            save_message.topic = \"ledrama/config/save/\" + currentMac;\n            save_message.payload = \"\";\n            save_message.qos = 1; // set the message to be sent at least once\n            node.send([save_message, null]);\n        }\n    });\n    msg.payload = \"Success\";\n}\n\nelse {\n    msg.statusCode = 400;\n    msg.payload = \"Invalid payload.\";\n}\n\nreturn ([null, msg]);\n\nfunction getMac(topic) {\n    // Regular expression to extract the MAC-address from topic\n    const regex = /ledrama\\/config\\/(?:set\\/|save\\/)?([0-9A-Fa-f]{12})\\/(?:\\d{1,2})/;\n    const matchResult = topic.match(regex);\n\n    // Check if there is a match and get the captured group\n    if (matchResult && matchResult.length > 1) {\n        const mac_address = matchResult[1].toUpperCase();\n\n        if (mac_address.length == 12) {\n            return mac_address;\n        } else {\n            node.warn(\"Error retrieving MAC-address from topic \" + topic + \", length was too small.\");\n            return null;\n        }\n\n    } else {\n        node.warn(\"No match found\");\n        return null;\n    }\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 720,
+        "wires": [
+            [
+                "24c6b71471211d45",
+                "eea3d8019c3aefe5"
+            ],
+            [
+                "522bff0187d6c126",
+                "24c6b71471211d45"
+            ]
+        ]
+    },
+    {
+        "id": "00570f7833b30b2f",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "name": "function 3",
+        "func": "let message = msg.payload;\n\nmsg.statusCode = 200;\nmsg.payload = \"Success\";\n\nif (message.topic) {\n    // effect messages\n    message.retain = true; // retain saves the message in the broker, i.e. makes the effect message persistant even if the controller is reconnected\n    message.qos = 1; // set the message to be sent at least once\n    \n    return ([message, msg]);\n} else {\n    msg.statusCode = 400;\n    msg.payload = \"Invalid payload.\"\n    return ([null, msg]); // there was no payload or topic\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 780,
+        "wires": [
+            [
+                "24c6b71471211d45",
+                "29262c56d859e32e"
+            ],
+            [
+                "db8d598a7110f243"
+            ]
+        ]
+    },
+    {
+        "id": "2f83d04b4f8efe71",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "name": "function 4",
+        "func": "let message = msg.payload;\n\nif (message.payload && message.name) {\n    msg.query = \"INSERT INTO effects (name, payload) VALUES ($name, $payload) RETURNING *;\"\n    msg.queryParameters = {};\n    msg.queryParameters.name = message.name;\n    msg.queryParameters.payload = message.payload;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 940,
+        "wires": [
+            [
+                "24c6b71471211d45",
+                "66dce6a3d1c5c0eb"
+            ]
+        ]
+    },
+    {
+        "id": "522bff0187d6c126",
+        "type": "http response",
+        "z": "fc2f8c974347bb18",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1810,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "db8d598a7110f243",
+        "type": "http response",
+        "z": "fc2f8c974347bb18",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1790,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "13b439741fde3d5b",
+        "type": "http response",
+        "z": "fc2f8c974347bb18",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1790,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "eea3d8019c3aefe5",
+        "type": "link out",
+        "z": "fc2f8c974347bb18",
+        "name": "mqtt",
+        "mode": "link",
+        "links": [
+            "0f8b73aa9c3eaabc"
+        ],
+        "x": 1810,
+        "y": 680,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "29262c56d859e32e",
+        "type": "link out",
+        "z": "fc2f8c974347bb18",
+        "name": "mqtt",
+        "mode": "link",
+        "links": [
+            "0f8b73aa9c3eaabc"
+        ],
+        "x": 1790,
+        "y": 760,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "fb8bd49c7b5b9e4a",
+        "type": "http in",
+        "z": "fc2f8c974347bb18",
+        "name": "",
+        "url": "api/artnet",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1060,
+        "y": 860,
+        "wires": [
+            [
+                "7c4be6390e4cf841"
+            ]
+        ]
+    },
+    {
+        "id": "7c4be6390e4cf841",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "name": "function 5",
+        "func": "let response = {\n    statusCode: 200,\n    payload: \"Success\",\n    req: msg.req,\n    res: msg.res\n};\n\nif (Array.isArray(msg.payload)) {\n    msg.payload.forEach(function(message) {\n        node.send([message, null]);\n    });\n    return ([null, response])\n} else {\n    response.statusCode = 400;\n    response.payload = \"Invalid payload, expected an array.\"\n    return ([null, response])\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 860,
+        "wires": [
+            [
+                "24c6b71471211d45",
+                "2c3018ef5703ab70"
+            ],
+            [
+                "c7ffaa2a6c39dc28"
+            ]
+        ]
+    },
+    {
+        "id": "2c3018ef5703ab70",
+        "type": "link out",
+        "z": "fc2f8c974347bb18",
+        "name": "mqtt",
+        "mode": "link",
+        "links": [
+            "0f8b73aa9c3eaabc"
+        ],
+        "x": 1410,
+        "y": 840,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "c7ffaa2a6c39dc28",
+        "type": "http response",
+        "z": "fc2f8c974347bb18",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1410,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "24c6b71471211d45",
+        "type": "debug",
+        "z": "fc2f8c974347bb18",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1860,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "66dce6a3d1c5c0eb",
+        "type": "link call",
+        "z": "fc2f8c974347bb18",
+        "name": "",
+        "links": [
+            "fde2289209736ddc"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1450,
+        "y": 960,
+        "wires": [
+            [
+                "1d259b0a45c19b0d"
+            ]
+        ]
+    },
+    {
+        "id": "74cf0b91172cb4a4",
+        "type": "debug",
+        "z": "fc2f8c974347bb18",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "9bc8c9d0b2263240",
+        "type": "debug",
+        "z": "fc2f8c974347bb18",
+        "name": "debug 10",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1260,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "1d259b0a45c19b0d",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "name": "function 6",
+        "func": "if (msg.payload.length === 1) {\n    msg.statusCode = 200;\n    msg.payload = \"Success!\";\n} else {\n    msg.statusCode = 400;\n    msg.payload = \"Error in saving to database\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1640,
+        "y": 960,
+        "wires": [
+            [
+                "13b439741fde3d5b"
+            ]
+        ]
+    },
+    {
+        "id": "d573f281baeb4dfc",
+        "type": "debug",
+        "z": "fc2f8c974347bb18",
+        "name": "user input",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1300,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "344d45ae3f3b3fa6",
+        "type": "debug",
+        "z": "fc2f8c974347bb18",
+        "name": "control messages",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1350,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "cd3e4333e16f8b10",
+        "type": "comment",
+        "z": "fc2f8c974347bb18",
+        "g": "1fb45dacd1719638",
+        "name": "Database",
+        "info": "",
+        "x": 160,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "685c52fecff3bb75",
+        "type": "debug",
+        "z": "fc2f8c974347bb18",
+        "g": "1fb45dacd1719638",
+        "name": "from db",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ea572f6c9fb697b4",
+        "type": "inject",
+        "z": "fc2f8c974347bb18",
+        "g": "1fb45dacd1719638",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 60,
+        "wires": [
+            [
+                "24e6dca351947bd7"
+            ]
+        ]
+    },
+    {
+        "id": "fde2289209736ddc",
+        "type": "link in",
+        "z": "fc2f8c974347bb18",
+        "g": "1fb45dacd1719638",
+        "name": "PostgreSQL",
+        "links": [],
+        "x": 170,
+        "y": 140,
+        "wires": [
+            [
+                "24e6dca351947bd7"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "4c003b39e8fea80f",
+        "type": "link out",
+        "z": "fc2f8c974347bb18",
+        "g": "1fb45dacd1719638",
+        "name": "link out 1",
+        "mode": "return",
+        "links": [],
+        "x": 505,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "b7829d32adac79cd",
+        "type": "mqtt in",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "",
+        "topic": "ledrama/config/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e0a1f29ce25b5df7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 720,
+        "y": 220,
+        "wires": [
+            [
+                "4231e164d9d01036",
+                "a57ce25cd17e3226"
+            ]
+        ]
+    },
+    {
+        "id": "e118c6c306573819",
+        "type": "comment",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "MQTT",
+        "info": "",
+        "x": 690,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "9aa7011a8ca2c5d3",
+        "type": "mqtt out",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e0a1f29ce25b5df7",
+        "x": 1050,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "5a670d53ccee1629",
+        "type": "comment",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "Listen for connected controllers",
+        "info": "",
+        "x": 790,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ec49de4ba6d16127",
+        "type": "comment",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "Send data to controllers",
+        "info": "",
+        "x": 760,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "0f8b73aa9c3eaabc",
+        "type": "link in",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "MQTT",
+        "links": [
+            "6c1e30654e6fce75",
+            "785963b88c5201fa",
+            "eea3d8019c3aefe5",
+            "29262c56d859e32e",
+            "2c3018ef5703ab70"
+        ],
+        "x": 690,
+        "y": 140,
+        "wires": [
+            [
+                "7072979911e48f1a"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "4231e164d9d01036",
+        "type": "debug",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "connected",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a57ce25cd17e3226",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "ignore msgs after deploy",
+        "func": "// get deployment time from context\nvar deployTime = context.get(\"deployTime\") || null;\n\n// Check if msg.timestamp is available, otherwise use current time\nvar messageTimestamp = msg.timestamp ? new Date(msg.timestamp).getTime() : new Date().getTime();\n\nif (deployTime !== null) {\n    var timeDifference = Math.abs(messageTimestamp - deployTime);\n} else {\n    timeDifference = 5000;\n}\n\n// Set a threshold (in milliseconds) for deployment messages\nvar deploymentThreshold = 4000; // Adjust as needed\n\nif (timeDifference < deploymentThreshold) {\n    // This message was sent during deployment\n    //node.warn(\"Deployment message ignored\");\n    return null; // Discarding the message or take appropriate action\n} else {\n    // This is a \"real\" message sent when a device connects\n    //node.warn(\"Received a real message\");\n    return msg; // Process the message as needed\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nvar deployDate = new Date();\nvar formattedDate = new Intl.DateTimeFormat('en-GB', {timeZone: 'Europe/Helsinki', dateStyle: 'short', timeStyle: 'long'}).format(deployDate);\n// convert to unix time for comparisons\nvar deployTime = deployDate.getTime();\n// save the timestamp as a node-wide 'global' variable in node context\ncontext.set(\"deployTime\", deployTime);\nnode.warn(\"Flow deployed at \" + formattedDate);",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 220,
+        "wires": [
+            [
+                "54f6bb94c50b72ed"
+            ]
+        ]
+    },
+    {
+        "id": "54f6bb94c50b72ed",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "set connected controller as seen",
+        "func": "const input = msg.topic;\nconst now = new Date().toISOString();\nlet group = null;\n\n// Regular expression to extract the MAC-address from topic\nconst regex = /ledrama\\/config\\/(?:set\\/|save\\/)?([0-9A-Fa-f]{12})\\/(?:\\d{1,2})/;\nconst matchResult = input.match(regex);\n\n// Check if there is a match and get the captured group\nif (matchResult && matchResult.length > 1) {\n    const mac_address = matchResult[1].toUpperCase();\n\n    if (mac_address.length == 12) {\n        if (msg.hasOwnProperty('payload') && msg.payload.hasOwnProperty('sGroup')) {\n            group = msg.payload.sGroup;\n        }\n        //node.warn(mac_address);\n        var newmsg = {};\n        newmsg.payload = {\n            \"mac\": mac_address,\n            \"last_seen\": now,\n            \"last_group\": group\n        }\n        return newmsg;\n    } else {\n        node.warn(\"Error retrieving MAC-address from topic \"+ input +\", length was too small.\");\n    }\n    \n} else {\n    //node.warn(\"No match found\");\n    return;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 220,
+        "wires": [
+            [
+                "6ee6eb5749798797",
+                "287c54e7dba68328"
+            ]
+        ]
+    },
+    {
+        "id": "1857e266360438f4",
+        "type": "debug",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1520,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "287c54e7dba68328",
+        "type": "debug",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1500,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "2ecf735c8e648b91",
+        "type": "link call",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "",
+        "links": [
+            "fde2289209736ddc"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1830,
+        "y": 220,
+        "wires": [
+            [
+                "35154949f0ae9fd7"
+            ]
+        ]
+    },
+    {
+        "id": "8ee2c2efb0c70fa5",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "format query",
+        "func": "msg.query = \"INSERT INTO controllers (mac, last_seen, last_group) VALUES($mac, $last_seen, $last_group) ON CONFLICT(mac) DO UPDATE SET last_seen = EXCLUDED.last_seen, last_group = EXCLUDED.last_group RETURNING *;\"\n\nmsg.queryParameters = {};\nmsg.queryParameters.mac = msg.payload.mac;\nmsg.queryParameters.last_seen = msg.payload.last_seen;\nmsg.queryParameters.last_group = msg.payload.last_group;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1670,
+        "y": 220,
+        "wires": [
+            [
+                "2ecf735c8e648b91"
+            ]
+        ]
+    },
+    {
+        "id": "7072979911e48f1a",
+        "type": "delay",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "5",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 870,
+        "y": 140,
+        "wires": [
+            [
+                "9aa7011a8ca2c5d3"
+            ]
+        ]
+    },
+    {
+        "id": "35154949f0ae9fd7",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "set msg for frontend",
+        "func": "msg.topic = \"db_updated\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2040,
+        "y": 220,
+        "wires": [
+            [
+                "e7401383ecb07322"
+            ]
+        ]
+    },
+    {
+        "id": "e7401383ecb07322",
+        "type": "link out",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "26d1cc3769da6b5f"
+        ],
+        "x": 2175,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "47be5edc5bae2310",
+        "type": "inject",
+        "z": "fc2f8c974347bb18",
+        "g": "d7d27a53b7f73cd2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 1060,
+        "wires": [
+            [
+                "992af21e2ca714c2"
+            ]
+        ]
+    },
+    {
+        "id": "391917d0898de884",
+        "type": "debug",
+        "z": "fc2f8c974347bb18",
+        "g": "d7d27a53b7f73cd2",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "69aef4937ecb637e",
+        "type": "comment",
+        "z": "fc2f8c974347bb18",
+        "g": "d7d27a53b7f73cd2",
+        "name": "db admin",
+        "info": "",
+        "x": 100,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "992af21e2ca714c2",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "g": "d7d27a53b7f73cd2",
+        "name": "function 1",
+        "func": "/*\nSELECT\ncolumn_name,\n    data_type,\n    character_maximum_length,\n    is_nullable\nFROM\ninformation_schema.columns\nWHERE\ntable_name = 'controllers'; \n*/\n\n/*\nCREATE TABLE groups (\n    group_id INT NOT NULL UNIQUE,\n    group_name VARCHAR NOT NULL,\n    active BOOLEAN NOT NULL DEFAULT true\n);\n*/\n\n/* GRANT SELECT ON TABLE groups TO vector_deco1_ro; */\n\n// const groups = [\n//     { \"group_id\": 61, \"group_name\": \"PärinäAreena\" },\n//     { \"group_id\": 63, \"group_name\": \"Yläkatsomo\" },\n//     { \"group_id\": 65, \"group_name\": \"Striimikorneri\" },\n//     { \"group_id\": 62, \"group_name\": \"Loossit oikea\" },\n//     { \"group_id\": 66, \"group_name\": \"Loossit vasen\" },\n//     { \"group_id\": 60, \"group_name\": \"Sisäänkäynti\" },\n//     { \"group_id\": 68, \"group_name\": \"Info\" },\n//     { \"group_id\": 69, \"group_name\": \"Pizzakolmiot\" },\n//     { \"group_id\": 64, \"group_name\": \"Liven katsomot\" },\n//     { \"group_id\": 67, \"group_name\": \"Neuvotteluhuone\" },\n//     { \"group_id\": 70, \"group_name\": \"Testi 1\" },\n//     { \"group_id\": 71, \"group_name\": \"Testi 2\" }\n// ];\n\n// groups.forEach(function(group) {\n//     msg.query = \"INSERT INTO groups (group_id, group_name) VALUES ($group_id, $group_name) RETURNING *;\"\n//     msg.queryParameters = {};\n//     msg.queryParameters.group_id = group.group_id;\n//     msg.queryParameters.group_name = group.group_name;\n\n//     node.send(msg)\n// });\n//msg.query = \"GRANT SELECT, INSERT, UPDATE ON TABLE effects TO vector_deco1_ro;\"\n//msg.query = \"SELECT column_name, data_type, is_unique, is_nullable FROM information_schema.columns WHERE table_name = 'controllers'; \"\n//msg.query = \"ALTER TABLE controllers ADD COLUMN active BOOLEAN NOT NULL DEFAULT true;\"\n//msg.query = \"INSERT INTO controllers (mac, last_seen, last_group, active) VALUES ('F8DAFF55B594', '2024-03-26T13:43:17.657Z', null, false) RETURNING *;\"\n//  const controllers = [\n\n\n//      { \"controller_id\": 15, \"type\": \"wifi\", \"mac\": \"501F9DBF713C\" }\n  \n//  ]\n//  controllers.forEach(function(controller) {\n//      msg.query = \"UPDATE controllers SET controller_id = $id, type = $type WHERE mac = $mac RETURNING *;\"\n//      //msg.query = \"INSERT INTO controllers (mac, controller_id, type) VALUES ($mac, $id, $type) RETURNING *;\"\n//       msg.queryParameters = {};\n//       msg.queryParameters.id = controller.controller_id;\n//       msg.queryParameters.type = controller.type;\n//       msg.queryParameters.mac = controller.mac;\n\n//      node.send(msg)\n//   });\n//msg.query = \"INSERT INTO controllers (mac, controller_id, type) VALUES ($mac, $id, $type) RETURNING *;\"\nmsg.query = \"DELETE FROM controllers WHERE mac = '341739c63c94' RETURNING *;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 1060,
+        "wires": [
+            [
+                "0e74e124a16be34f"
+            ]
+        ]
+    },
+    {
+        "id": "111eaf18cee2588f",
+        "type": "http in",
+        "z": "fc2f8c974347bb18",
+        "g": "aeb9bf0d07038c9b",
+        "name": "",
+        "url": "/api/controllerlist",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 400,
+        "wires": [
+            [
+                "1c6d666c53083b5e",
+                "7cb800562d9fd7b4"
+            ]
+        ]
+    },
+    {
+        "id": "1c6d666c53083b5e",
+        "type": "debug",
+        "z": "fc2f8c974347bb18",
+        "g": "aeb9bf0d07038c9b",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "7cb800562d9fd7b4",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "g": "aeb9bf0d07038c9b",
+        "name": "get list from db",
+        "func": "msg.query = \"SELECT controllers.*, groups.group_name FROM controllers LEFT JOIN groups ON groups.group_id = controllers.last_group WHERE controllers.active = true AND controllers.last_group NOT BETWEEN 80 AND 89 ORDER BY last_seen DESC;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 480,
+        "wires": [
+            [
+                "ec89871e554db0e9"
+            ]
+        ]
+    },
+    {
+        "id": "04289283f6f2ed94",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "g": "aeb9bf0d07038c9b",
+        "name": "spoof list, remove before production",
+        "func": "msg.payload = JSON.stringify([\n    {\n        \"mac\": \"6E5E4D3C2B1A\",\n        \"last_seen\": \"2024-06-08T16:33:50.789Z\",\n        \"type\": \"not_set\"\n    },\n    {\n        \"mac\": \"9E8E7D6C5B4A\",\n        \"last_seen\": \"2024-04-30T04:21:41.567Z\",\n        \"type\": \"lan\"\n    },\n    {\n        \"mac\": \"A1B2C3D4E5F6\",\n        \"last_seen\": \"2024-04-02T20:15:12.456Z\",\n        \"type\": \"wifi\"\n    },\n    {\n        \"mac\": \"2F2E3D4C5B6A\",\n        \"last_seen\": \"2024-02-27T01:58:33.789Z\",\n        \"type\": \"lan\"\n    },\n    {\n        \"mac\": \"4A3B2C1D5E6F\",\n        \"last_seen\": \"2024-03-05T09:36:45.345Z\",\n        \"type\": \"lan\"\n    },\n    {\n        \"mac\": \"1A2B4C4D5E6F\",\n        \"last_seen\": \"2024-01-10T18:43:59.567Z\",\n        \"type\": \"lan\"\n    },\n    {\n        \"mac\": \"1A2B3C4D5E6F\",\n        \"last_seen\": \"2023-09-15T08:32:45.123Z\",\n        \"type\": \"not_set\"\n    },\n    {\n        \"mac\": \"9E8F7D6C5B4A\",\n        \"last_seen\": \"2023-05-22T03:08:14.901Z\",\n        \"type\": \"wifi\"\n    },\n    {\n        \"mac\": \"3E4D5C6B7A8F\",\n        \"last_seen\": \"2023-08-11T22:10:20.012Z\",\n        \"type\": \"not_set\"\n    },\n    {\n        \"mac\": \"1F2E3D4C5B6A\",\n        \"last_seen\": \"2023-07-09T05:22:37.890Z\",\n        \"type\": \"wifi\"\n    },\n    {\n        \"mac\": \"1A203C4D5E6F\",\n        \"last_seen\": \"2023-03-19T23:04:08.234Z\",\n        \"type\": \"wifi\"\n    },\n    {\n        \"mac\": \"607A8B9C0E1F\",\n        \"last_seen\": \"2023-01-25T13:37:03.345Z\",\n        \"type\": \"wifi\"\n    },\n    {\n        \"mac\": \"8E9D1C2B3A4F\",\n        \"last_seen\": \"2023-12-14T11:19:25.456Z\",\n        \"type\": \"wifi\"\n    },\n    {\n        \"mac\": \"6D7A8B9C0E1F\",\n        \"last_seen\": \"2022-10-01T14:27:09.678Z\",\n        \"type\": \"wifi\"\n    },\n    {\n        \"mac\": \"8D9C6B7A5F4E\",\n        \"last_seen\": \"2022-12-18T12:55:28.234Z\",\n        \"type\": \"not_set\"\n    },\n    {\n        \"mac\": \"6F5E4D3C2B1A\",\n        \"last_seen\": \"2022-11-28T15:47:30.789Z\",\n        \"type\": \"lan\"\n    },\n    {\n        \"mac\": \"4A3B2C1D5E8F\",\n        \"last_seen\": \"2022-09-02T10:50:22.901Z\",\n        \"type\": \"lan\"\n    }\n]);\nmsg.statusCode = 200;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 420,
+        "wires": [
+            [
+                "099f4eecdf01f1d1"
+            ]
+        ]
+    },
+    {
+        "id": "ec89871e554db0e9",
+        "type": "link call",
+        "z": "fc2f8c974347bb18",
+        "g": "aeb9bf0d07038c9b",
+        "name": "",
+        "links": [
+            "fde2289209736ddc"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 430,
+        "y": 480,
+        "wires": [
+            [
+                "6a549b49ea38fa02"
+            ]
+        ]
+    },
+    {
+        "id": "099f4eecdf01f1d1",
+        "type": "http response",
+        "z": "fc2f8c974347bb18",
+        "g": "aeb9bf0d07038c9b",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 790,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6a549b49ea38fa02",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "g": "aeb9bf0d07038c9b",
+        "name": "format payload",
+        "func": "if (msg.payload.length > 0) {\n    const payload = msg.payload;\n    msg.payload = JSON.stringify(msg.payload);\n    msg.statusCode = 200;\n} else {\n    msg.statusCode = 404;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 480,
+        "wires": [
+            [
+                "099f4eecdf01f1d1"
+            ]
+        ]
+    },
+    {
+        "id": "f63b999e3b9ebc5f",
+        "type": "inject",
+        "z": "fc2f8c974347bb18",
+        "g": "aeb9bf0d07038c9b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 440,
+        "wires": [
+            [
+                "7cb800562d9fd7b4"
+            ]
+        ]
+    },
+    {
+        "id": "cf144f0cd6891cce",
+        "type": "http in",
+        "z": "fc2f8c974347bb18",
+        "g": "24c8fada6efc99d6",
+        "name": "",
+        "url": "/api/groups",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 580,
+        "wires": [
+            [
+                "0ec9dda61574a6df"
+            ]
+        ]
+    },
+    {
+        "id": "5df40f6a8c07a1c6",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "g": "24c8fada6efc99d6",
+        "name": "spoof list, remove before production",
+        "func": "msg.payload = JSON.stringify([\n    { \"group_id\": 61, \"group_name\": \"PärinäAreena\" },\n    { \"group_id\": 63, \"group_name\": \"Yläkatsomo\" },\n    { \"group_id\": 65, \"group_name\": \"Striimikorneri\" },\n    { \"group_id\": 62, \"group_name\": \"Loossit oikea\" },\n    { \"group_id\": 66, \"group_name\": \"Loossit vasen\" },\n    { \"group_id\": 60, \"group_name\": \"Sisäänkäynti\" },\n    { \"group_id\": 68, \"group_name\": \"Info\" },\n    { \"group_id\": 69, \"group_name\": \"Pizzakolmiot\" },\n    { \"group_id\": 64, \"group_name\": \"Liven katsomot\" },\n    { \"group_id\": 67, \"group_name\": \"Neuvotteluhuone\" },\n    { \"group_id\": 70, \"group_name\": \"Testi 1\" },\n    { \"group_id\": 71, \"group_name\": \"Testi 2\" }\n]);\nmsg.statusCode = 200;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0ec9dda61574a6df",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "g": "24c8fada6efc99d6",
+        "name": "get list from db",
+        "func": "msg.query = \"SELECT * FROM groups WHERE group_id NOT BETWEEN 80 AND 89 ORDER BY group_name ASC;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 640,
+        "wires": [
+            [
+                "6b56fbd5d54ad65e"
+            ]
+        ]
+    },
+    {
+        "id": "6b56fbd5d54ad65e",
+        "type": "link call",
+        "z": "fc2f8c974347bb18",
+        "g": "24c8fada6efc99d6",
+        "name": "",
+        "links": [
+            "fde2289209736ddc"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 370,
+        "y": 640,
+        "wires": [
+            [
+                "04a27cea8fefe641"
+            ]
+        ]
+    },
+    {
+        "id": "04a27cea8fefe641",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "g": "24c8fada6efc99d6",
+        "name": "format payload",
+        "func": "if (msg.payload.length > 0) {\n    const payload = msg.payload;\n    msg.payload = JSON.stringify(msg.payload);\n    msg.statusCode = 200;\n} else {\n    msg.statusCode = 404;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 640,
+        "wires": [
+            [
+                "9fb032c06d869634",
+                "79363f727cd6b517"
+            ]
+        ]
+    },
+    {
+        "id": "9fb032c06d869634",
+        "type": "http response",
+        "z": "fc2f8c974347bb18",
+        "g": "24c8fada6efc99d6",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "79363f727cd6b517",
+        "type": "debug",
+        "z": "fc2f8c974347bb18",
+        "g": "24c8fada6efc99d6",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "a69ad1dab6c2c535",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "g": "3254992e7607666b",
+        "name": "spoof list, remove when in production",
+        "func": "msg.payload = JSON.stringify([\n\n    {\n        \"name\": \"Katsomo Gradient\",\n        \"payload\": {\n            \"gDef\": [0, 180, 255, 255, 100, 100, 255, 255, 230, 140, 0, 255, 255, 160, 255, 255],\n            \"gMapMode\": 3,\n            \"gScale\": 20,\n            \"fxSpeed\": 50,\n            \"sEffect\": 3,\n            \"nVal\": 0\n        }\n    },\n    /*  {\n          \"name\": \"Katsomo Green Glitter\",\n          \"payload\": {\n              \"fxSpeed\": 0,\n              \"nVal\": 255,\n              \"nHue\": 130,\n              \"nSat\": 0,\n              \"nScaleY\": 500,\n              \"nScaleX\": 50,\n              \"sEffect\": 6,\n              \"sColor\": [0, 0, 0],\n              \"nContrast\": 8\n          }\n      }, */\n    {\n        \"name\": \"Katsomo Matrix\",\n        \"payload\": {\n            \"sEffect\": 3,\n            \"gDef\": [0, 100, 255, 127, 127, 50, 255, 127, 255, 100, 255, 127],\n            \"gMapMode\": 2,\n            \"gScale\": 50,\n            \"fxSpeed\": 50,\n            \"nVal\": 255,\n            \"nSat\": 0,\n            \"nScaleX\": 500,\n            \"nScaleY\": 800,\n            \"nContrast\": 8\n        }\n    },\n    /*   {\n           \"name\": \"Katsomo Cyan Glitter\",\n           \"payload\": {\n               \"fxSpeed\": 30,\n               \"nVal\": 255,\n               \"nHue\": 130,\n               \"nSat\": 255,\n               \"nScaleY\": 500,\n               \"nScaleX\": 500,\n               \"sEffect\": 6,\n               \"sColor\": [130, 255, 0]\n           }\n       }, */\n    {\n        \"name\": \"Katsomo Explode\",\n        \"payload\": {\n            \"sEffect\": 3,\n            \"gDef\": [0, 0, 255, 127, 127, 35, 255, 127, 255, 0, 255, 127],\n            \"gMapMode\": 1,\n            \"gScale\": 20,\n            \"fxSpeed\": 100,\n            \"nVal\": 255,\n            \"nSat\": 180,\n            \"nHue\": 40,\n            \"nScaleX\": 10,\n            \"nScaleY\": 800,\n            \"nContrast\": 8\n        }\n    },\n    {\n        \"name\": \"Katsomo Thunder\",\n        \"payload\": {\n            \"sEffect\": 3,\n            \"gDef\": [0, 200, 255, 127, 127, 170, 255, 127, 255, 200, 255, 127],\n            \"gMapMode\": 3,\n            \"gScale\": 50,\n            \"fxSpeed\": 5,\n            \"nVal\": 255,\n            \"nSat\": 0,\n            \"nScaleX\": 20,\n            \"nScaleY\": 800,\n            \"nContrast\": 8\n        }\n    },\n    {\n        \"name\": \"Katsomo Pulse Sweep\",\n        \"payload\": {\n            \"gDef\": [0, 255, 255, 255, 230, 127, 255, 255, 255, 255, 255, 255],\n            \"gMapMode\": 1,\n            \"gScale\": 100,\n            \"fxSpeed\": 30,\n            \"sEffect\": 3,\n            \"nVal\": 0\n        }\n    },\n    {\n        \"name\": \"Katsomo Circle Sweep\",\n        \"payload\": {\n            \"sEffect\": 3,\n            \"gMapMode\": 0,\n            \"fxSpeed\": 50,\n            \"gDef\": [0, 0, 0, 0, 32, 0, 0, 255, 64, 127, 255, 255, 127, 0, 255, 255, 220, 0, 255, 0, 255, 0, 255, 0],\n            \"gScale\": 200,\n            \"nVal\": 0\n        }\n    },\n    {\n        \"name\": \"Katsomo Y Sweep\",\n        \"payload\": {\n            \"gDef\": [0, 255, 255, 255, 127, 127, 255, 255, 255, 0, 255, 255],\n            \"gMapMode\": 0,\n            \"gScale\": 50,\n            \"fxSpeed\": 50,\n            \"sEffect\": 3,\n            \"nVal\": 0\n        }\n    },\n    {\n        \"name\": \"Katsomo X Sweep\",\n        \"payload\": {\n            \"gDef\": [0, 255, 255, 255, 127, 127, 255, 255, 255, 0, 255, 255],\n            \"gMapMode\": 0,\n            \"gScale\": 50,\n            \"fxSpeed\": 20,\n            \"sEffect\": 3,\n            \"nVal\": 0\n        }\n    },\n    {\n        \"name\": \"Katsomo Sin Storm\",\n        \"payload\": {\n            \"sEffect\": 3,\n            \"gMapMode\": 1,\n            \"fxSpeed\": 50,\n            \"gDef\": [0, 200, 255, 0, 127, 0, 0, 255, 255, 200, 255, 0],\n            \"gScale\": 100,\n            \"nVal\": 0\n        }\n    },\n    {\n        \"name\": \"Katsomo Nakkivene\",\n        \"payload\": {\n            \"gDef\": [0, 255, 255, 255, 127, 220, 255, 255, 255, 255, 255, 255],\n            \"gMapMode\": 32,\n            \"gScale\": 20,\n            \"fxSpeed\": 500,\n            \"sEffect\": 3,\n            \"nVal\": 0\n        }\n    },\n    {\n        \"name\": \"Strobo\",\n        \"payload\": {\n            \"gDef\": [0, 0, 0, 0, 255, 0, 0, 255],\n            \"gMapMode\": 0,\n            \"gScale\": 1,\n            \"fxSpeed\": 20000,\n            \"sEffect\": 3,\n            \"nVal\": 0\n        }\n    },\n    {\n        \"name\": \"Candy\",\n        \"payload\": {\n            \"gDef\": [0, 0, 255, 255, 127, 0, 255, 255, 128, 0, 0, 255, 255, 0, 0, 255],\n            \"gMapMode\": 0,\n            \"gScale\": 200,\n            \"fxSpeed\": 50,\n            \"sEffect\": 3,\n            \"nVal\": 0\n        }\n    }\n]);\nmsg.statusCode = 200;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 740,
+        "wires": [
+            [
+                "5055038c9ffe9167"
+            ]
+        ]
+    },
+    {
+        "id": "03fc773d76b7ae35",
+        "type": "http in",
+        "z": "fc2f8c974347bb18",
+        "g": "3254992e7607666b",
+        "name": "",
+        "url": "/api/effects",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 740,
+        "wires": [
+            [
+                "0895603b987fbba4"
+            ]
+        ]
+    },
+    {
+        "id": "0895603b987fbba4",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "g": "3254992e7607666b",
+        "name": "get list from db",
+        "func": "msg.query = \"SELECT * FROM effects ORDER BY name ASC;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 800,
+        "wires": [
+            [
+                "6cd212cb8ee5c0fe"
+            ]
+        ]
+    },
+    {
+        "id": "6cd212cb8ee5c0fe",
+        "type": "link call",
+        "z": "fc2f8c974347bb18",
+        "g": "3254992e7607666b",
+        "name": "",
+        "links": [
+            "fde2289209736ddc"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 370,
+        "y": 800,
+        "wires": [
+            [
+                "abd918cabd6be4c6"
+            ]
+        ]
+    },
+    {
+        "id": "abd918cabd6be4c6",
+        "type": "function",
+        "z": "fc2f8c974347bb18",
+        "g": "3254992e7607666b",
+        "name": "format payload",
+        "func": "if (msg.payload.length > 0) {\n    const payload = msg.payload;\n    msg.payload = JSON.stringify(msg.payload);\n    msg.statusCode = 200;\n} else {\n    msg.statusCode = 404;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 800,
+        "wires": [
+            [
+                "5055038c9ffe9167"
+            ]
+        ]
+    },
+    {
+        "id": "5055038c9ffe9167",
+        "type": "http response",
+        "z": "fc2f8c974347bb18",
+        "g": "3254992e7607666b",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 730,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "24e6dca351947bd7",
+        "type": "postgresql",
+        "z": "fc2f8c974347bb18",
+        "g": "1fb45dacd1719638",
+        "name": "",
+        "query": "SELECT * FROM controllers;",
+        "postgreSQLConfig": "191c918a0e9f28f6",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 350,
+        "y": 140,
+        "wires": [
+            [
+                "685c52fecff3bb75",
+                "4c003b39e8fea80f"
+            ]
+        ]
+    },
+    {
+        "id": "0e74e124a16be34f",
+        "type": "postgresql",
+        "z": "fc2f8c974347bb18",
+        "g": "d7d27a53b7f73cd2",
+        "name": "",
+        "query": "",
+        "postgreSQLConfig": "90a0b79256ad109d",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 410,
+        "y": 1060,
+        "wires": [
+            [
+                "391917d0898de884"
+            ]
+        ]
+    },
+    {
+        "id": "6ee6eb5749798797",
+        "type": "deduplicate",
+        "z": "fc2f8c974347bb18",
+        "g": "c430558767986893",
+        "name": "",
+        "keyproperty": "payload.mac",
+        "expiry": "4",
+        "x": 1490,
+        "y": 220,
+        "wires": [
+            [
+                "1857e266360438f4",
+                "8ee2c2efb0c70fa5"
+            ],
+            [
+                "287c54e7dba68328"
+            ]
+        ]
+    },
+    {
+        "id": "e0a1f29ce25b5df7",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "SECRET",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "191c918a0e9f28f6",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "SECRET",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "SECRET",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "SECRET",
+        "userFieldType": "str",
+        "password": "SECRET",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "90a0b79256ad109d",
+        "type": "postgreSQLConfig",
+        "name": "postgresql admin",
+        "host": "SECRET",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "SECRET",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "SECRET",
+        "userFieldType": "str",
+        "password": "SECRET",
+        "passwordFieldType": "str"
+    }
+]
