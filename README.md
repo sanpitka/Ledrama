@@ -1,4 +1,6 @@
-<h1>Ledrama GUI (Kandiprojekti kevät 2024)</h1>
+Viiden hengen kandidaattiprojekti keväältä 2024, laajuus 8 opintopistettä.
+
+<h1>Ledrama GUI</h1>
 <h2>Käyttöohje</h2>
  
 <h3>Johdanto</h3>
